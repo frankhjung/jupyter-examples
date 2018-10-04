@@ -1,4 +1,11 @@
-# Jupyter Notebook - Example using Iris dataset
+# Jupyter Notebook
+
+Some examples using Iris dataset.
+
+## Notebooks
+
+* [Python IRIS Dataset](./python-example.ipynb)
+* [Python Widgets](./widgets-example.ipynb)
 
 ## Render Jupyter Notebook as PDF
 
