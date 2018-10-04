@@ -17,6 +17,14 @@ with:
 make python-example.pdf
 ```
 
+## Google Colaboratory
+
+[Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb) is a
+free online Jupyter notebook environment. It runs entirely in the cloud, so is a
+good external test for your notebooks. It also integrates with documents on
+Google Drive. See [here](https://github.com/burnash/gspread) for an example on
+how to read from a spreadsheet.
+
 ## References
 
 * [Jupyter Notebook](http://jupyter.org/)
