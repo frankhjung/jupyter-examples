@@ -8,6 +8,7 @@ htmlcov/
 .ipynb_checkpoints/
 MANIFEST
 .noseids
+*.pdf
 *.pyc
 __pycache__
 *.pyo

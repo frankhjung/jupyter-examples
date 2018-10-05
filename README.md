@@ -6,6 +6,7 @@ Some examples using Iris dataset.
 
 * [Python IRIS Dataset](./python-example.ipynb)
 * [Python Widgets](./widgets-example.ipynb)
+* [R](./r-example.ipynb)
 
 ## Render Jupyter Notebook as PDF
 
