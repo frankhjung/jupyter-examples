@@ -26,6 +26,12 @@ good external test for your notebooks. It also integrates with documents on
 Google Drive. See [here](https://github.com/burnash/gspread) for an example on
 how to read from a spreadsheet.
 
+## Examples
+
+Find many interesting examples of notebooks from
+[this](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#pandas-for-data-analysis)
+page.
+
 ## References
 
 * [Jupyter Notebook](http://jupyter.org/)
