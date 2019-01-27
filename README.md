@@ -1,14 +1,18 @@
-# Jupyter Notebook
+# Jupyter Notebooks
 
-Some examples using Iris dataset.
+Some examples in Python and R.
 
 ## Notebooks
 
 * [Python 3 - example 1](./python3-example-1.ipynb)
 * [Python 3 - example 2](./python3-example-2.ipynb)
-* [Python IRIS Dataset](./python-example.ipynb)
 * [Python Widgets](./widgets-example.ipynb)
-* [R](./r-example.ipynb)
+* [R - example 1](./r-example-1.ipynb)
+* [R - example 2](./r-example-2.ipynb)
+
+Compare this to R Markdown:
+
+* [R - example 1](r-example-1.Rmd)
 
 ## Render Jupyter Notebook as PDF
 
@@ -17,7 +21,8 @@ describes how this is done. Call [make](https://www.gnu.org/software/make/)
 with:
 
 ```bash
-make python-example.pdf
+make python3-example-1.pdf
+make python3-example-2.pdf
 ```
 
 ## Google Colaboratory

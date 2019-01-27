@@ -1,8 +1,7 @@
 #!/usr/bin/env make
 
-# Render a LaTeX document to PDF.
-# Example:
-#	make python.example.pdf
+# Renders a Juypter Notebook to TeX.
+# Then converts the LaTeX document to PDF.
 
 .PHONY: all clean
 .SUFFIXES: .ipynb .tex .pdf
