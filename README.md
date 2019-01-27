@@ -4,6 +4,8 @@ Some examples using Iris dataset.
 
 ## Notebooks
 
+* [Python 3 - example 1](./python3-example-1.ipynb)
+* [Python 3 - example 2](./python3-example-2.ipynb)
 * [Python IRIS Dataset](./python-example.ipynb)
 * [Python Widgets](./widgets-example.ipynb)
 * [R](./r-example.ipynb)
