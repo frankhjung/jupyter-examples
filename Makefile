@@ -3,15 +3,14 @@
 # Renders a Juypter Notebook to TeX.
 # Then converts the LaTeX document to PDF.
 
-.PHONY: all clean
+.PHONY: html pdf clean
 .SUFFIXES: .ipynb .tex .pdf
-.DEFAULT: all
+.DEFAULT: html
 
 IPYNB	:= $(wildcard *.ipynb)
 TEXS	:= $(patsubst %.ipynb, %.tex, $(IPYNB))
+HTMLS	:= $(patsubst %.tex, %.html, $(TEXS))
 PDFS	:= $(patsubst %.tex, %.pdf, $(TEXS))
-
-all: $(PDFS)
 
 .ipynb.tex:
 	-jupyter nbconvert --to=latex $<
@@ -20,6 +19,10 @@ all: $(PDFS)
 	-latexmk -f -gg -quiet -pdf \
 		-interaction=nonstopmode -shell-escape \
 		-pdflatex="pdflatex %O %S" $<
+
+html:	$(HTMLS)
+
+pdf:	$(PDFS)
 
 clean:
 	-latexmk -quiet -f -c $(TEXS)
