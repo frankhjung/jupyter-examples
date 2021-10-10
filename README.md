@@ -6,6 +6,7 @@ Some examples in Python and R.
 
 * [Python 3 - example 1](./python3-example-1.ipynb)
 * [Python 3 - example 2](./python3-example-2.ipynb)
+* [Pandas - Series](./pandas-series.ipynb)
 * [Python Widgets](./widgets-example.ipynb)
 * [R - example 1](./r-example-1.ipynb)
 * [R - example 2](./r-example-2.ipynb)
@@ -14,15 +15,40 @@ Compare this to R Markdown:
 
 * [R - example 1](r-example-1.Rmd)
 
+## Jupyter Server
+
+### Start
+
+To run a local Jupyter server on port `8889` (the default is `8888`):
+
+```bash
+nice jupyter-notebook --port 8889 &
+```
+
+### Stop
+
+To stop the server, call:
+
+```bash
+jupyter-notebook stop 8889
+```
+
 ## Render Jupyter Notebook as PDF
 
 The method used here is to render a PDF from LaTeX. The [Makefile](./Makefile)
-describes how this is done. Call [make](https://www.gnu.org/software/make/)
-with:
+describes how this is done. To render a PDF for a specific file, call
+[make](https://www.gnu.org/software/make/) :
 
 ```bash
 make python3-example-1.pdf
-make python3-example-2.pdf
+```
+
+Or, generate all PDF's (or HTML's) with:
+
+```bash
+make pdf
+# or 
+make html
 ```
 
 ## Google Colaboratory

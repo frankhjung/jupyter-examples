@@ -3,9 +3,9 @@
 # Renders a Juypter Notebook to TeX.
 # Then converts the LaTeX document to PDF.
 
-.PHONY: html pdf clean
-.SUFFIXES: .ipynb .tex .pdf
-.DEFAULT: html
+.DEFAULT:	html
+.PHONY:		html pdf clean
+.SUFFIXES:	.ipynb .tex .pdf .html
 
 IPYNB	:= $(wildcard *.ipynb)
 TEXS	:= $(patsubst %.ipynb, %.tex, $(IPYNB))
@@ -14,6 +14,9 @@ PDFS	:= $(patsubst %.tex, %.pdf, $(TEXS))
 
 .ipynb.tex:
 	-jupyter nbconvert --to=latex $<
+
+.ipynb.html:
+	-jupyter nbconvert --to=html $<
 
 .tex.pdf:
 	-latexmk -f -gg -quiet -pdf \
@@ -25,9 +28,10 @@ html:	$(HTMLS)
 pdf:	$(PDFS)
 
 clean:
-	-latexmk -quiet -f -c $(TEXS)
-	@$(RM) -rf $(wildcard *_files)
+	latexmk -quiet -f -C $(TEXS)
+	@$(RM) -f $(wildcard *_files)
+	@$(RM) -f $(HTMLS)
 ifneq ("$(TEXS)", "")
-	@$(RM) $(patsubst %.tex, %.*.*, $(TEXS))
-	@$(RM) $(TEXS)
+	@$(RM) -f $(patsubst %.tex, %.*.*, $(TEXS))
+	@$(RM) -f $(TEXS)
 endif

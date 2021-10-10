@@ -2,7 +2,9 @@
 *.bak
 *,cover
 .coverage
+*.csv
 dist/
+*.html
 htmlcov/
 .idea/
 .ipynb_checkpoints/
@@ -19,3 +21,4 @@ README
 results.html
 *.swp
 target/
+.vscode/
