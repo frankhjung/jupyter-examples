@@ -30,7 +30,7 @@ pdf:	$(PDFS)
 clean:
 	latexmk -quiet -f -C $(TEXS)
 	@$(RM) -f $(wildcard *_files)
-	@$(RM) -f $(HTMLS)
+	@$(RM) -f $(HTMLS) *.csv
 ifneq ("$(TEXS)", "")
 	@$(RM) -f $(patsubst %.tex, %.*.*, $(TEXS))
 	@$(RM) -f $(TEXS)

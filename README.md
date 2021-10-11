@@ -4,12 +4,14 @@ Some examples in Python and R.
 
 ## Notebooks
 
-* [Python 3 - example 1](./python3-example-1.ipynb)
-* [Python 3 - example 2](./python3-example-2.ipynb)
-* [Pandas - Series](./pandas-series.ipynb)
-* [Python Widgets](./widgets-example.ipynb)
-* [R - example 1](./r-example-1.ipynb)
-* [R - example 2](./r-example-2.ipynb)
+* [Linear Regression - NumPy](linear_regression_numpy.ipynb)
+* [Linear Regression - scikit-learn](linear_regression_sklearn.ipynb)
+* [Python 3 - example 1](./python3_example_1.ipynb)
+* [Python 3 - example 2](./python3_example_2.ipynb)
+* [Pandas - Series](./pandas_series.ipynb)
+* [Python Widgets](./widgets_example.ipynb)
+* [R - example 1](./r_example_1.ipynb)
+* [R - example 2](./r_example_2.ipynb)
 
 Compare this to R Markdown:
 
@@ -40,7 +42,7 @@ describes how this is done. To render a PDF for a specific file, call
 [make](https://www.gnu.org/software/make/) :
 
 ```bash
-make python3-example-1.pdf
+make python3_example_1.pdf
 ```
 
 Or, generate all PDF's (or HTML's) with:
