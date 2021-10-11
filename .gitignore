@@ -19,6 +19,7 @@ python-example_files/
 python-example.pdf
 README
 results.html
+.spyproject/
 *.swp
 target/
 .vscode/
